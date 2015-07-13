@@ -1,31 +1,29 @@
 <head>
-    <script type="text/javascript" src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-    <link rel="import" href="bower_components/leaflet-map/leaflet-map.html">
-    <link rel="import" href="bower_components/iron-ajax/iron-ajax.html">
-    <style>
-      html, body {
-        margin: 0;
-        height: 100%;
-      }
-      leaflet-map {
-        height: 100%;
-      }
-    </style>
-  </head>
-  <body unresolved>
-    <leaflet-map longitude="-84.497019" latitude="38.046441" zoom="16">
+	<script type="text/javascript" src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+	<link rel="import" href="bower_components/leaflet-map/leaflet-map.html">
+	<link rel="import" href="bower_components/iron-ajax/iron-ajax.html">
+	<style>
+		html, body {
+			margin: 0;
+			height: 100%;
+		}
+		leaflet-map {
+			height: 100%;
+		}
+	</style>
+</head>
+<body unresolved>
+	<leaflet-map longitude="-84.497019" latitude="38.046441" zoom="16">
 
 	<leaflet-tilelayer 
-        url="http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"
-        min-zoom="10" max-zoom="20" noWrap>
-            Map source: <a href="https://cartodb.com/">CartoDB</a>
-    </leaflet-tilelayer>
-	<template is="dom-bind">
-      <iron-ajax url="runs.geojson" last-response="{{data}}" auto>
-      </iron-ajax>
-      <leaflet-geojson data="[[data]]" style='{"color":"#f7ff00"}'></leaflet-geojson>
-      
-    </template>
+	    url="http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png" min-zoom="10" max-zoom="20" noWrap>Map source: <a href="https://cartodb.com/">CartoDB</a>
+	</leaflet-tilelayer>
 
-    </leaflet-map>
-  </body>
+	<template is="dom-bind">
+		<iron-ajax url="runs.geojson" last-response="{{data}}" auto>
+		</iron-ajax>
+		<leaflet-geojson data="[[data]]" style='{"color":"#f7ff00"}'></leaflet-geojson>
+	</template>
+
+</leaflet-map>
+</body>
