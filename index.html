@@ -16,34 +16,13 @@
 	<leaflet-map longitude="-84.497019" latitude="38.046441" zoom="16" max-zoom="20">
 
 	<leaflet-tilelayer 
-	    url="http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png" min-zoom="10" max-zoom="20" noWrap>Map source: <a href="https://cartodb.com/">CartoDB</a>
+	    url="http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png" min-zoom="10" max-zoom="20" noWrap> Map data © OpenStreetMap contributors, CC-BY-SA, Map source: <a href="https://cartodb.com/">CartoDB</a>
 	</leaflet-tilelayer>
-
-	<!-- <template is="dom-bind">
-		<iron-ajax url="poly.geojson" last-response="{{data}}" auto>
-		</iron-ajax>
-		<leaflet-geojson data="[[data]]"
-			stroke=false
-			color="#f1c40f"
-			weight=30
-			opacity=0.25
-			fill=true
-			fill-color="#8e44ad"
-			fill-opacity=0.65
-			line-cap='square'
-			line-join='bevel'
-			clickable=false
-			pointer-events=false
-			class-name="poly"
-			>
-		</leaflet-geojson>
-	</template> -->
-
 	<template is="dom-bind">
 		<iron-ajax url="runs.geojson" last-response="{{data}}" auto>
 		</iron-ajax>
 		<leaflet-geojson data="[[data]]"
-		color="yellow"
+		color="#f1c40f"
 		weight=5
 		opacity=0.05>
 		</leaflet-geojson>
@@ -51,5 +30,3 @@
 
 </leaflet-map>
 </body>
-
-<!-- color:"#f7ff00" -->
