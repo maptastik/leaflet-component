@@ -1,6 +1,6 @@
 {
   "name": "leaflet-map",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "authors": [
     "Hendrik Brummermann <nhnb@users.sourceforge.net>",
     "Prateek Saxena <prtksxna@gmail.com>"
@@ -28,14 +28,13 @@
     "polymer": "^1.0.0",
     "leaflet": "^0.7.3"
   },
-  "_release": "1.0.1",
+  "_release": "1.0.2",
   "_resolution": {
     "type": "version",
-    "tag": "v1.0.1",
-    "commit": "c817df071598dad6914c5575600cd00fc8b3d38d"
+    "tag": "v1.0.2",
+    "commit": "07d7b9f896ace42427e1d4475c26cade8326b1eb"
   },
   "_source": "git://github.com/leaflet-extras/leaflet-map.git",
   "_target": "~1.0.1",
-  "_originalSource": "leaflet-map",
-  "_direct": true
+  "_originalSource": "leaflet-map"
 }

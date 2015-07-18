@@ -3,7 +3,7 @@
 *leaflet-map* is a web-component which provides access to the [leaflet map](http://leafletjs.com) 
 JavaScript library via html elements.
 
-Please have a look at the [demo page](https://leaflet-extras.github.io/leaflet-map/demo.html) or the [api documentation](https://leaflet-extras.github.io/leaflet-map/doc.html#leaflet-map).
+Please have a look at the [demo](https://leaflet-extras.github.io/leaflet-map/demo.html) or the [api documentation](https://leaflet-extras.github.io/leaflet-map/doc.html#leaflet-map).
 
 Most of the options documented in the Leaflet reference are exported as html attributes. 
 All events are mapped into html events of the same name.</p>
@@ -45,7 +45,7 @@ Import the main component and start creating your map:
     </style>
   </head>
   <body unresolved>
-    <leaflet-map longitude="77.2" latitude="28.4" zoom="12">
+    <leaflet-map fit-to-markers>
       <leaflet-marker longitude="77.2" latitude="28.4">
         Marker I
       </leaflet-marker>
@@ -99,7 +99,7 @@ leaflet-map is based on polymer and leaflet. Small parts of leaflet,
 especially the api documentation, have been copied into leaflet-map files.
 
 * [Leaflet](https://github.com/Leaflet/Leaflet/blob/master/LICENSE)
-* [Polymer](https://github.com/polymer/polymer/blob/master/LICENSE)
+* [Polymer](https://github.com/polymer/polymer/blob/master/LICENSE.txt)
 
 
 Copyright (c) 2014-2015

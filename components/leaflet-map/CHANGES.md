@@ -1,3 +1,14 @@
+v1.1.0
+======
+* add support for styling GeoJson (thanks to Ryan Cooper)
+
+v1.0.2
+======
+* workaround for {s},{x},{y},{z} being escaped in tileset urls (thanks to Kevin Schaaf, John Eckhart, JustinCase1089)
+* fixed fitToMarkers (thanks to Horacio Gonzalez)
+* fixed an endless loop on dragging a highly zoomed map
+* various documentation fixes (thanks to David Calhoun)
+
 v1.0.1
 ======
 * moved repository to https://github.com/leaflet-extras/leaflet-map
